@@ -10,10 +10,10 @@ const LiveStream = () => {
 
     if (Hls.isSupported()) {
       const hls = new Hls();
-hls.loadSource("http://memo-regarded-shaft-indoor.trycloudflare.com/stream.m3u8");
+hls.loadSource("https://memo-regarded-shaft-indoor.trycloudflare.com/stream.m3u8");
       hls.attachMedia(video);
     } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-      video.src = 'http://memo-regarded-shaft-indoor.trycloudflare.com/stream.m3u8';
+      video.src = 'https://memo-regarded-shaft-indoor.trycloudflare.com/stream.m3u8';
     }
   }, []);
 
